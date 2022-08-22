@@ -6,7 +6,7 @@ function displayPlayer()
     const cartContainer = document.getElementById("player-add");
     cartContainer.textContent = '';
 
-   if(player.length <= 5){
+   
     for(let i = 0; i < player.length; i++)
     {
         const tr = document.createElement("tr"); 
@@ -45,10 +45,8 @@ function displayPlayer()
         totalset.innerText = total;
     })
 
-   }
-   else{
-    alert('five player are allow');
-   }  
+   
+   
 }
 
 
@@ -59,13 +57,7 @@ function addToPlayer(element) {
         let button = document.getElementById(element.id);
         button.setAttribute('disabled','');
         button.style.backgroundColor = 'gray'
-    }
-
-   else{
-   
-   }
-   
-//    player name selecte
+        //    player name selecte
     const pName = element.parentNode.parentNode.children[0].innerText;
     const pN = {
         pName: pName,
@@ -75,5 +67,13 @@ function addToPlayer(element) {
     player.push(pN);
     
     displayPlayer();
+        
+    }
+
+   else{
+    alert('five player are allow');
+   }
+   
+
 
 }

@@ -4,35 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Your Best Five</title>
+    <title>Best football player in this world selected</title>
     <!-- tailwindcss link -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     
 </head>
 <body class="bg-gray-800">
-    <header>
-        <div class="bg-black text-white flex">
-            <div class="mt-48">
-                
+    <header class="mx-auto">
+        <div class="bg-black text-white   flex lg:flex-row flex-col-reverse">
+            <div class="lg:mt-48 ">
                 <img class="-mb-4" src="img/head-img.png" alt="">
-              
-                
             </div>
-            <div class="mr-56 mt-64 text-center">
-                <h1 class="text-5xl md:text-2xl ">Select Your Best Five</h1>
+            <div class="lg:mr-56 lg:mt-64 mt-4  text-center">
+                <h1 class="lg:text-5xl  italic text-orange-500 ">Best football player in this world selected</h1>
                 <p class="mt-4">The Best FIFA Men's Player is an association football award presented annually by the sport's governing body, FIFA, 
                     to the world's best men's player since 2016.</p>
             </div>
-            <div >
-                <img class="mt-32" src="img/Card-psg.png" alt="">
-                
-            </div>
+         
         </div>
     </header>
     <main class="w-9/12 mx-auto mt-5 pb-20 ">
-        <div class="grid grid-cols-2 gap-4 ">
-            <div class="grid grid-cols-3 gap-4 gap-y-2">
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1  gap-4 ">
+            <div class="grid  lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4 gap-y-2">
                 <!-- player 1 -->
                 <div>
                     <div class="card card-compact w-full h-80 bg-base-100 shadow-xl bg-black text-white">
@@ -115,10 +109,10 @@
 
             <!-- selected player -->
             <div>
-                <p class="text-4xl text-center text-white">Selected-V</p>
+                <p class="text-4xl text-center text-white underline decoration-orange-500">Selected-V</p>
                 </p>
                 <div class="overflow-x-auto">
-                    <table class="table table-zebra w-full h-80">
+                    <table class="table text-center w-full h-80">
     
                       <thead>
                         <tr>
@@ -129,22 +123,27 @@
                         
                       </tbody>
                     </table>
-                  </div>
-                  <div class="bg-gray-500 text-center h-96 mt-8 text-white">
-                    <h1 class="text-4xl  ">Budget</h1>
+                  <div class="bg-gray-500 text-center h-76 mt-2 text-white rounded">
+                    <h1 class="text-4xl underline decoration-orange-500 ">Budget</h1>
                     <p class="mt-4 ">Per player: <input class="text-black rounded ml-6" id="player-price" type="number"></p>
                     <button class="py-1 px-4 rounded bg-blue-500 mt-4 ml-4" id="calculate-player-price">Calculate</button>
-                    <p class="mt-4 ">Per Expenses: $<span id="expenses"></span></p>
-                    <p class="mt-4 ">Manager: <input class="text-black rounded ml-6" id="managercost" type="number"></p>
-                    <p class="mt-4 ">Coach: <input class="text-black rounded ml-11"  id="coachcost" type="number"></p>
+                    <p class="mt-2 ">Per Expenses: $<span id="expenses"></span></p>
+                    <p class="mt-2 ">Manager: <input class="text-black rounded ml-6" id="managercost" type="number"></p>
+                    <p class="mt-2 ">Coach: <input class="text-black rounded ml-11"  id="coachcost" type="number"></p>
                     <button id="total" class="py-1 px-4 rounded bg-blue-500 mt-4 ml-12 ">Calculator Total</button>
-                    <p class="mt-4" >Total $<span id="totalset"></span></p>
+                    <p class="" >Total $<span id="totalset"></span></p>
+                </div>
                 </div>
             </div>
          </div>        
         </div>
       </div>
     </main>
+
+    <footer>
+      <hr>
+      <p class="text-center text-white lg:mt-8">Copyright @ 2022 All Rights Reserved</p>
+    </footer>
     <script src="player.js"></script>
 </body>
 </html>

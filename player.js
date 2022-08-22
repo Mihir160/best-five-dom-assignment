@@ -25,7 +25,7 @@ function displayPlayer()
         let totalPlayerPrice = playerPriceValue * player.length; // total player cost multiplication
         let perExpenses = document.getElementById('expenses');
         perExpenses.innerText = totalPlayerPrice;
-        console.log(totalPlayerPrice);
+        
      })
     
     document.getElementById('total').addEventListener('click',function(){

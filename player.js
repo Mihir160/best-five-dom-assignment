@@ -12,7 +12,7 @@ function displayPlayer()
         const tr = document.createElement("tr"); 
         tr.innerHTML = `
         <th>${i+1}</th>
-        <td>${player[i].pName}</td>
+        <td class='text-center'>${player[i].pName}</td>
         
         `;
         cartContainer.appendChild(tr);
@@ -54,10 +54,8 @@ function displayPlayer()
 
 
 function addToPlayer(element) {
-   
     // disable button
-   
-    if(player.length <5){
+    if(player.length < 5){
         let button = document.getElementById(element.id);
         button.setAttribute('disabled','');
         button.style.backgroundColor = 'gray'

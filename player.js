@@ -54,10 +54,16 @@ function displayPlayer()
 
 
 function addToPlayer(element) {
-    
-   document.getElementById(element.id).disabled = true;
-   
+    if(player.length <5){
+        let button = document.getElementById(element.id);
+        button.setAttribute('disabled','');
+        button.style.backgroundColor = 'gray'
+    }
 
+   else{
+    alert('five player are allow')
+   }
+   
     const pName = element.parentNode.parentNode.children[0].innerText;
 
 

@@ -57,7 +57,7 @@ function addToPlayer(element) {
         let button = document.getElementById(element.id);
         button.setAttribute('disabled','');
         button.style.backgroundColor = 'gray'
-        //    player name selecte
+        //    player name collect
     const pName = element.parentNode.parentNode.children[0].innerText;
     const pN = {
         pName: pName,
